@@ -70,8 +70,7 @@ app.layout = html.Div(children=[
 )
 
 
-@app.callback(Output('map', 'figure'),
-             [Input('dropdown', 'value')])
+@app.callback(Output('map', 'figure'), [Input('dropdown', 'value')])
 def make_figure(chosen):
     mygraphtitle = f'A Map of {chosen} '
 
